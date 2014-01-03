@@ -148,6 +148,13 @@
                "group"  : "root",
 			   "authentication" : "S3AccessCreds"
               },
+			  "/usr/share/tomcat6/scripts/aws/sqs_send_message.rb" : {
+				"source" : { "Fn::Join" : ["", ["https://s3.amazonaws.com/stelligentlabs/scripts/aws/sqs_send_message.rb"]]},
+		        "mode"   : "000500",
+		        "owner"  : "tomcat",
+		        "group"  : "tomcat"
+		      },
+			  
 			  "/home/ec2-user/nodes.pp" : {
                 "content" : { "Fn::Join" : ["", [
 				  "node default {\n",
