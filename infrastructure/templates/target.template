@@ -43,14 +43,14 @@
 	"PrivateBucket" : {
       "Description" : "S3 bucket for storing credentials",
       "Type" : "String",
-      "Default" : "stelligentlabs-private",
+      "Default" : "ditc-jw-creds",
       "ConstraintDescription" : "Must be a valid S3 Bucket"
     },
 
 	"PublicBucket" : {
 	  "Description" : "S3 bucket for storing build artifacts",
       "Type" : "String",
-      "Default" : "stelligentlabs",
+      "Default" : "ditcjwartefacts",
       "ConstraintDescription" : "Must be a valid S3 Bucket"
 	}
   },
